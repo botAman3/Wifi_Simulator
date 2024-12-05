@@ -3,10 +3,11 @@
 
 #include "User.h"
 #include <vector>
+#include "Channel.h"
 
-class BaseWifi {
+class BaseWiFi {
 public:
-    BaseWifi(std::vector<User> users, Channel& channel) 
+    BaseWiFi(std::vector<User> users, Channel & channel) 
         : users(users), channel(channel), maxLatency(0.0f), totalLatency(0.0f) {}
 
     double throughput(double totalTime) {
